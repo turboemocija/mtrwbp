@@ -1,0 +1,50 @@
+body {
+    height:100vh;
+    margin: 0;
+    padding:0;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(Open-Book.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    color:white;
+    font-family: Arial,Calibri;
+    font-size: 18px;
+    
+}
+body .main {
+    margin: 0 auto;
+    padding-top: 100px;
+    width:50%;
+    text-align:center;
+}
+#TextBox1,#TextBox2,#TextBox3 {
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow:none;
+    outline:none;
+    border:0;
+    margin-left: 5px;
+}
+.row{
+    margin-bottom: 10px;
+}
+#Label1,#Label2,#Label3{
+    width: 105px;
+    display:inline-block;
+}
+#TextBox3{
+    resize:none;
+    margin-left:0;
+}
+p{
+    margin: 0 auto;
+    width: 50%;
+    text-align:center;
+    padding-top: 50px;
+}
+#Button1,#Button2,#Button3 {
+    padding: 5px;
+    border: 0;
+    
+    box-shadow: 0;
+    border-radius: 5px;
+}
