@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[tabela1] (
+    [ID]       BIGINT          IDENTITY (1, 1) NOT NULL,
+    [Engleski] NVARCHAR (50)   NOT NULL,
+    [Srpski]   NVARCHAR (50)   NOT NULL,
+    [Opis]     NVARCHAR (1024) NULL,
+    PRIMARY KEY CLUSTERED ([ID] ASC)
+);

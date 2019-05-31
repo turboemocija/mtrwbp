@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+
+namespace ElektronskiRecnik01
+{
+    public partial class Recnik : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            Label1.Text = Label2.Text = "";
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string rec = TextBox1.Text;
+            string tekst = Label2.Text;
+
+            int a = 0;
+            if (DropDownList1.SelectedValue == "srpsko-engleski")
+            {
+                SqlConnection con = new SqlConnection(SqlDataSource1.ConnectionString);
+                con.Open();
+
+                string query = "select * from tabela1 where Srpski='" + TextBox1.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                // string output = cmd.ExecuteScalar().ToString();
+                SqlDataReader rider1;
+                rider1 = cmd.ExecuteReader();
+
+
+                while (rider1.Read())
+                {
+
+                    Label1.Text = rider1[1].ToString();
+                    Label2.Text = rider1[3].ToString();
+                    a++;
+                }
+                if (a == 0)
+                {
+                    Label2.Text = "Nema reci";
+                    Label1.Text = "";
+                }
+                con.Close();
+            }
+            else
+            {
+                SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ToString());
+                con.Open();
+
+                string query = "select * from tabela1 where Engleski='" + TextBox1.Text + "'";
+                SqlCommand cmd = new SqlCommand(query, con);
+                // string output = cmd.ExecuteScalar().ToString();
+                SqlDataReader rider1;
+                rider1 = cmd.ExecuteReader();
+
+
+                while (rider1.Read())
+                {
+
+                    Label1.Text = rider1[2].ToString();
+                    Label2.Text = rider1[3].ToString();
+                    a++;
+                }
+                if (a == 0)
+                {
+                    Label2.Text = "Nema reci";
+                    Label1.Text = "";
+                }
+                con.Close();
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("DodavanejReci.aspx");
+            
+        }
+
+
+    }
+}
