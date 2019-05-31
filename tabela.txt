@@ -1,0 +1,9 @@
+CREATE TABLE [dbo].[Uspeh] (
+    [Razred]     INT NOT NULL,
+    [Odlican]    INT NULL,
+    [Vrlodobar]  INT NULL,
+    [Dobar]      INT NULL,
+    [Dovoljan]   INT NULL,
+    [Nedovoljan] INT NULL,
+    PRIMARY KEY CLUSTERED ([Razred] ASC)
+);

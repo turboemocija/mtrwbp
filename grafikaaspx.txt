@@ -1,0 +1,27 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Grafika.aspx.cs" Inherits="Uspeh_ucenika.Grafika" %>
+
+<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1">
+            <Series>
+                <asp:Series Name="Series1" XValueMember="Razred" YValueMembers="Prosek"></asp:Series>
+            </Series>
+            <ChartAreas>
+                <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+            </ChartAreas>
+        </asp:Chart>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx">Pocetna</asp:HyperLink>
+    </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT Razred, Odlican, Vrlodobar, Dobar, Dovoljan, Nedovoljan, CAST ((Odlican*5+Vrlodobar*4+Dobar*3+Dovoljan*2+Nedovoljan*1)*1.0/(Odlican+Vrlodobar+Dobar+Dovoljan+Nedovoljan) AS decimal(16,2)) AS Prosek FROM Uspeh;"></asp:SqlDataSource>
+    </form>
+</body>
+</html>
