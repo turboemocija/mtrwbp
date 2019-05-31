@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>Uputstvo</title>
+		<link rel="stylesheet" type="text/css" href="content.css">
+	</head>
+	<body background="09.jpg"id="body_container">
+        <div id="header_content">
+            <p id="header_title">Foto Galerija</p>
+            <ul id="header_pages">
+                <li class="header_pages_items"><a class="header_pages_items_link" href="FotoGalerija.html">Pocetna</a></li>
+				<li class="header_pages_items"><a class="header_pages_items_link" href="Oautoru.html">O autoru</a></li>
+				<li class="header_pages_items"><a class="header_pages_items_link" >Uputstvo</a></li>
+			</ul>
+		</div>
+		<p>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspLevim klikom misa na malu fotografiju, ispod centralne, ta fotografija se pojavljuje na njenom mestu. Takodje se ispisuje njen naziv iznad fotografija.
+		</p>
+		<div id="foot"><marquee direction="left"><font face="Helvetica">Projekat radili: Ilić, Đurić, Milivojević, Glogovac</marquee></div>
+	</body>
+</html>

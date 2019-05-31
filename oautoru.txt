@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>O autoru</title>
+		<link rel="stylesheet" type="text/css" href="content.css">
+	</head>
+	<body background="09.jpg" id="body_container">
+        <div id="header_content">
+            <p id="header_title">Foto Galerija</p>
+            <ul id="header_pages">
+                <li class="header_pages_items"><a class="header_pages_items_link" href="FotoGalerija.html">Pocetna</a></li>
+				<li class="header_pages_items"><a class="header_pages_items_link" href="Oautoru.html">O autoru</a></li>
+				<li class="header_pages_items"><a class="header_pages_items_link" href="Uputstvo.html">Uputstvo</a></li>
+			</ul>
+		</div>
+		<p>
+			&nbsp&nbsp&nbsp&nbsp
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu consequat ac felis donec et odio pellentesque diam volutpat. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. A cras semper auctor neque vitae tempus. Ac orci phasellus egestas tellus rutrum tellus. Sed faucibus turpis in eu mi. Feugiat scelerisque varius morbi enim nunc faucibus a. Elementum eu facilisis sed odio morbi quis commodo odio. Lacus vestibulum sed arcu non odio euismod lacinia at quis. At erat pellentesque adipiscing commodo elit at imperdiet dui. Pellentesque adipiscing commodo elit at. In mollis nunc sed id semper risus in hendrerit. Ut pharetra sit amet aliquam id. Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Etiam sit amet nisl purus. Habitant morbi tristique senectus et netus et malesuada. Faucibus a pellentesque sit amet. Turpis egestas maecenas pharetra convallis posuere morbi leo. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Interdum velit euismod in pellentesque massa placerat.
+
+Hendrerit gravida rutrum <br><br>Quisque non tellus. At quis risus sed vulputate. Feugiat nisl pretium fusce id velit ut tortor. Diam sollicitudin tempor id eu nisl nunc mi. Sit amet porttitor eget dolor morbi. Dui sapien eget mi proin sed. Id volutpat lacus laoreet non. Leo duis ut diam quam nulla porttitor. Pulvinar pellentesque habitant morbi tristique senectus et netus. Sed vulputate mi sit amet mauris commodo. Sit amet aliquam id diam maecenas ultricies mi. Fames ac turpis egestas integer eget. Integer quis auctor elit sed vulputate. Pretium quam vulputate dignissim suspendisse in. Nec ullamcorper sit amet risus nullam eget felis eget.
+
+Leo integer malesuada nunc vel risus commodo.<br><BR><BR> Adipiscing enim eu turpis egestas pretium aenean pharetra. Sit amet justo donec enim diam vulputate. At consectetur lorem donec massa sapien faucibus et molestie. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Egestas sed sed risus pretium quam vulputate dignissim suspendisse. Quisque sagittis purus sit amet. Fames ac turpis egestas sed tempus urna et pharetra. Leo duis ut diam quam nulla. Sapien nec sagittis aliquam malesuada bibendum. Massa tincidunt dui ut ornare lectus sit. Viverra nam libero justo laoreet sit. Mollis aliquam ut porttitor leo a diam sollicitudin tempor. Mauris cursus mattis molestie a.
+
+Sagittis vitae et leo duis ut diam quam. Nec feugiat nisl pretium fusce id. Ullamcorper velit sed ullamcorper morbi. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Consequat nisl vel pretium lectus. Eget mi proin sed libero enim. Dolor sit amet consectetur adipiscing elit ut aliquam. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Quam viverra orci sagittis eu volutpat odio facilisis. Erat imperdiet sed euismod nisi porta lorem mollis aliquam. Porta nibh venenatis cras sed felis eget velit. In arcu cursus euismod quis viverra nibh cras pulvinar. Nulla facilisi etiam dignissim diam quis enim.
+
+
+		</p>
+		<div id="foot"><marquee direction="left"><font face="Helvetica">Projekat radili: Ilić, Đurić, Milivojević, Glogovac</marquee></div>
+	</body>
+</html>
