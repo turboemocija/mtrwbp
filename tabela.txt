@@ -1,0 +1,8 @@
+CREATE TABLE [dbo].[Utisak] (
+    [Id]       INT         IDENTITY (1, 1) NOT NULL,
+    [Ime]      NCHAR (15)  NULL,
+    [Email]    NCHAR (20)  NULL,
+    [Komentar] NCHAR (100) NULL,
+    [Datum]    DATETIME    NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);

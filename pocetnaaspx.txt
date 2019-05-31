@@ -1,0 +1,31 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pocetna.aspx.cs" Inherits="Knjiga_utisaka.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Knjiga utisaka</title>
+    <link rel="stylesheet" href="StyleSheet1.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main">
+        <div class="row">
+            <asp:Label ID="Label1" runat="server" Text="Ime"></asp:Label><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        </div>
+        <div class="row">
+            <asp:Label ID="Label2" runat="server" Text="Email"></asp:Label><asp:TextBox ID="TextBox2" type="email" runat="server"></asp:TextBox>
+        </div>
+        <div class="row">
+            <asp:Label ID="Label3" runat="server" Text="Komentar"></asp:Label><asp:TextBox ID="TextBox3" textmode="MultiLine" Columns="20" Rows="7"  runat="server"></asp:TextBox>
+        </div>
+        
+        <asp:Button ID="Button1" runat="server" Text="Dodaj komentar" OnClick="Button1_Click"/>
+
+       <asp:Button ID="Button2" runat="server" Text="Uputstvo" OnClick="Button2_Click"/>
+       <asp:Button ID="Button3" runat="server" Text="O autoru" OnClick="Button3_Click"/>
+    </div>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Utisak]"></asp:SqlDataSource>
+    </form>
+</body>
+</html>
