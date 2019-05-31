@@ -1,0 +1,48 @@
+function zvuk1() {
+    document.getElementById('zvuk1').play();
+}
+
+function zvuk11() {
+    document.getElementById('zvuk1').pause();
+}
+
+function zvuk2() {
+    document.getElementById('zvuk2').play();
+}
+
+function zvuk22() {
+    document.getElementById('zvuk2').pause();
+}
+
+function zvuk3() {
+    document.getElementById('zvuk3').play();
+}
+
+function zvuk33() {
+    document.getElementById('zvuk3').pause();
+}
+
+function zvuk4() {
+    document.getElementById('zvuk4').play();
+}
+
+function zvuk44() {
+    document.getElementById('zvuk4').pause();
+}
+
+
+function zvuk5() {
+    document.getElementById('zvuk5').play();
+}
+
+function zvuk55() {
+    document.getElementById('zvuk5').pause();
+}
+
+function zvuk6() {
+    document.getElementById('zvuk6').play();
+}
+
+function zvuk66() {
+    document.getElementById('zvuk6').pause();
+}

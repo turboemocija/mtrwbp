@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pocetna</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+        <script src="function.js"></script>
+    </head>
+    <body>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="pocetna.html">Pocetna</a></li>
+            <li class="nav-item"><a href="uputstvo.html">Uputstvo</a></li>
+            <li class="nav-item"><a href="oautoru.html">O autoru</a></li>
+        </ul>
+    </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">Naziv instrumenta</div>
+                <div class="col-4">Slika instrumenta</div>
+                <div class="col-4">Zvuk instrumenta</div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">Gitara</div>
+
+                <div class="col-4">
+                    <a href="https://sr.wikipedia.org/sr-ec/%D0%93%D0%B8%D1%82%D0%B0%D1%80%D0%B0" target="_blank">
+                        <img src="img/gitara.jpg" alt="gitara">
+                    </a>
+                </div>
+
+                <div class="col-4">
+                    <img src="img/zvucnik.jpg" alt="zvucnik" onmouseenter="zvuk1()" onmouseleave="zvuk11()">
+                    <audio class="media" id="zvuk1" src="music/gitara.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">Klavir</div>
+                <div class="col-4">
+                    <a href="https://sr.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B0%D0%B2%D0%B8%D1%80" target="_blank">
+                        <img src="img/klavir.jpg" alt="klavir">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="img/zvucnik.jpg" alt="zvucnik" onmouseenter="zvuk2()" onmouseleave="zvuk22()">
+                    <audio class="media" id="zvuk2" src="music/klavir.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">Violina</div>
+                <div class="col-4">
+                    <a href="https://sr.wikipedia.org/wiki/%D0%92%D0%B8%D0%BE%D0%BB%D0%B8%D0%BD%D0%B0" target="_blank">
+                        <img src="img/violina.jpg" alt="violina">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="img/zvucnik.jpg" alt="zvucnik" onmouseenter="zvuk3()" onmouseleave="zvuk33()">
+                    <audio class="media" id="zvuk3" src="music/violina.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">Saksofon</div>
+                <div class="col-4">
+                    <a href="https://sr.wikipedia.org/wiki/%D0%A1%D0%B0%D0%BA%D1%81%D0%BE%D1%84%D0%BE%D0%BD" target="_blank">
+                        <img src="img/saksofon.jpg" alt="gitara">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="img/zvucnik.jpg" alt="zvucnik" onmouseenter="zvuk4()" onmouseleave="zvuk44()">
+                    <audio class="media" id="zvuk4" src="music/saksofon.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">Truba</div>
+                <div class="col-4">
+                    <a href="https://sr.wikipedia.org/wiki/%D0%A2%D1%80%D1%83%D0%B1%D0%B0" target="_blank">
+                        <img src="img/truba.jpg" alt="gitara">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="img/zvucnik.jpg" alt="zvucnik" onmouseenter="zvuk5()" onmouseleave="zvuk55()">
+                    <audio class="media" id="zvuk5" src="music/truba.mp3"></audio>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-4">Bubanj</div>
+                <div class="col-4">
+                    <a href="https://sr.wikipedia.org/wiki/%D0%91%D1%83%D0%B1%D0%B0%D1%9A" target="_blank">
+                        <img src="img/bubanj.jpg" alt="gitara">
+                    </a>
+                </div>
+                <div class="col-4">
+                    <img src="img/zvucnik.jpg" alt="zvucnik" onmouseenter="zvuk6()" onmouseleave="zvuk66()">
+                    <audio class="media" id="zvuk6" src="music/bubanj.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

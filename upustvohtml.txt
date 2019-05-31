@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Upustvo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    </head>
+
+    <body>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="pocetna.html">Pocetna</a></li>
+            <li class="nav-item"><a href="uputstvo.html">Uputstvo</a></li>
+            <li class="nav-item"><a href="oautoru.html">O autoru</a></li>
+        </ul>
+    </nav>
+        <div>
+            <p class="info">Klikom na sliku instrumenta otvara se stranica wikipedije o tom instrumentu, prelaskom misa preko zvucnika cuje se zvuk izabranog instrumenta.</p>
+            <img src="img/orkestar.jpg" alt="orkestar" class="orkestar">
+        </div>
+    </body>
+</html>
