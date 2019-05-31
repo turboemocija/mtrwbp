@@ -1,0 +1,32 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Glavna.aspx.cs" Inherits="vremenska_prognoza.Glavna" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" type="text/css" href="jeste.css" />
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:HyperLink ID="HyperLink1"  runat="server" NavigateUrl="~/Autor.aspx">O autoru</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink2"  runat="server" NavigateUrl="~/Uputstvo.aspx">Uputstvo</asp:HyperLink>
+                <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true" style="height: 22px">
+            <asp:ListItem>Beograd</asp:ListItem>
+            <asp:ListItem>Novi Sad</asp:ListItem>
+            <asp:ListItem>Subotica</asp:ListItem>
+            <asp:ListItem>Zrenjanin</asp:ListItem>
+            <asp:ListItem>Pirot</asp:ListItem>
+            <asp:ListItem>Nis</asp:ListItem>
+            <asp:ListItem>Vranje</asp:ListItem>
+            <asp:ListItem>Ruma</asp:ListItem>
+            <asp:ListItem>Pristina</asp:ListItem>
+            <asp:ListItem>Sombor</asp:ListItem>
+        </asp:DropDownList>
+        <iframe id="urIframe" runat="server" src="https://naslovi.net/vremenska-prognoza/beograd"></iframe>
+    </div>
+    </form>
+</body>
+</html>

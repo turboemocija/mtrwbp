@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace vremenska_prognoza
+{
+    public partial class Glavna : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(DropDownList1.SelectedItem.Value=="Beograd")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/beograd");
+            }
+            if (DropDownList1.SelectedItem.Value == "Novi Sad")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/novi-sad");
+            }
+            if (DropDownList1.SelectedItem.Value == "Subotica")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/subotica");
+            }
+            if (DropDownList1.SelectedItem.Value == "Zrenjanin")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/zrenjanin");
+            }
+            if (DropDownList1.SelectedItem.Value == "Pirot")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/pirot");
+            }
+            if (DropDownList1.SelectedItem.Value == "Nis")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/nis");
+            }
+            if (DropDownList1.SelectedItem.Value == "Vranje")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/vranje");
+            }
+            if (DropDownList1.SelectedItem.Value == "Ruma")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/ruma");
+            }
+            if (DropDownList1.SelectedItem.Value == "Pristina")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/cyr/vremenska-prognoza/pristina");
+            }
+            if (DropDownList1.SelectedItem.Value == "Sombor")
+            {
+                urIframe.Attributes.Add("src", "https://naslovi.net/vremenska-prognoza/sombor");
+            }
+
+        }
+    }
+}
