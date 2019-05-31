@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[Login] (
+    [User] NCHAR (20) NOT NULL,
+    [Pass] NCHAR (20) NOT NULL,
+    PRIMARY KEY CLUSTERED ([User] ASC)
+);
+
+
+CREATE TABLE [dbo].[Tabela] (
+    [UserId]   NCHAR (20) NOT NULL,
+    [Password] NCHAR (20) NOT NULL,
+    PRIMARY KEY CLUSTERED ([UserId] ASC)
+);

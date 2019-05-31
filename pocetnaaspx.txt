@@ -1,0 +1,58 @@
+
+
+
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Pocetna.aspx.cs" Inherits="aplikejsn.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style>
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style2 {
+            width: 152px;
+        }
+        .auto-style3 {
+            width: 152px;
+            height: 26px;
+        }
+        .auto-style4 {
+            height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table class="auto-style1">
+            <tr>
+                <td class="auto-style3">Ime</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style3">Sifra</td>
+                <td class="auto-style4">
+                    <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style2">&nbsp;</td>
+                <td>
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Prijavi" />
+                </td>
+            </tr>
+        </table>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+    </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Pregled.aspx">Pregled</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Oautoru.aspx">O autoru</asp:HyperLink>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString='<%$ ConnectionStrings:ConnectionString %>' SelectCommand="SELECT * FROM [Tabela]"></asp:SqlDataSource>
+    </form>
+</body>
+</html>
+
