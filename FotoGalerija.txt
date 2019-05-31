@@ -1,0 +1,35 @@
+<html>
+<head>
+<title> Foto Galerija</title>
+<link rel="stylesheet" type="text/css" href="content.css"/>
+		<script type="text/javascript" src="script.js"></script>
+		<meta charset="UTF-8"/>
+</head>
+<body background="09.jpg">
+<div id="header_content">
+<br><Br><br><Br><br><Br><br><Br><br><Br>
+				<p id="header_title">Foto Galerija</p>
+				<ul id="header_pages">
+					<li class="header_pages_items"><a class="header_pages_items_link" >Pocetna</a></li>
+					<li class="header_pages_items"><a class="header_pages_items_link" href="oautoru.html">O autoru</a></li>
+					<li class="header_pages_items"><a class="header_pages_items_link" href="uputstvo.html">Uputstvo</a></li>
+				</ul>
+</div>
+<div id="cont">
+<h2 id="naziv">Mercedes-Benz E63 AMG</h2>
+<img id="glavna_slika" class="glavna" src="gallery/01.jpg">
+<br>
+<img class="number" id="Mercedes-Benz E63 AMG" src="gallery/01.jpg" onclick="zameni(this)"> 
+<img class="number" id="BMW M5 e60" src="gallery/02.jpg" onclick="zameni(this)">
+<img class="number" id="Audi RS6" src="gallery/03.jpg" onclick="zameni(this)">
+<img class="number" id="Audi RS7" src="gallery/04.jpg" onclick="zameni(this)">
+<img class="number" id="Mercedes-Benz S63 AMG" src="gallery/05.jpg" onclick="zameni(this)">
+<img class="number" id="Nissan GT-R" src="gallery/06.jpg" onclick="zameni(this)">
+<img class="number" id="BMW M2" src="gallery/07.jpg" onclick="zameni(this)">
+<img class="number" id="BMW M6" src="gallery/08.jpg" onclick="zameni(this)">
+<img class="number" id="Mercedes-Benz G65 AMG" src="gallery/09.jpg" onclick="zameni(this)">
+<img class="number" id="BMW X5 M" src="gallery/10.jpg" onclick="zameni(this)"> 
+</div>
+<div id="foot"><marquee direction="left"><font face="Helvetica">Projekat radili: Ilić, Đurić, Milivojević, Glogovac</marquee></div>
+</body>
+</html>
