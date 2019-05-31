@@ -1,0 +1,39 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="AlimpicVezbe.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <script src="JavaScript1.js"></script>
+    <link rel="stylesheet" type="text/css" href="stil.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table class="sortable">
+        <tr>
+            <th><a href="#">Rbr</a></th>
+            <th><a href="#">Ime</th>
+            <th><a href="#">Prezime</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>Pera</td>
+            <td>Mikic</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Mika</td>
+            <td>Zikic</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Zika</td>
+            <td>Peric</td>
+        </tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>
