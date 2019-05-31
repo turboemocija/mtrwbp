@@ -1,2 +1,2 @@
 # mtrwbp
-maturski prog
+U branches su svi zadaci pod inicjalima
