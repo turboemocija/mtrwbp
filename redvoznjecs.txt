@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.IO;
+
+namespace RedVoznjeJankovic
+{
+    public partial class RedVoznje : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (DropDownList1.SelectedValue == "Izaberite liniju")
+                return;
+            HashSet<string> pravac = new HashSet<string>();
+            StreamReader citac = new StreamReader(HttpRuntime.AppDomainAppPath + DropDownList1.SelectedValue + ".txt");
+            while (citac.Peek() > 0)
+            {
+                string pom = citac.ReadLine();
+                pom = pom.Substring(5);
+                pom = pom.Substring(0, pom.IndexOf(' '));
+                pravac.Add(pom);
+            }
+            DropDownList2.Items.Clear();
+            foreach (string lel in pravac)
+            {
+                DropDownList2.Items.Add(lel);
+            }
+        }
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            for (int i = 1; i < Table1.Rows.Count; i++)
+            {
+                Table1.Rows.RemoveAt(i);
+            }
+        }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if (DropDownList1.SelectedValue == "Izaberite liniju")
+                return;
+            StreamReader citac = new StreamReader(HttpRuntime.AppDomainAppPath + DropDownList1.SelectedValue + ".txt");
+            for (int i = 1; i < Table1.Rows.Count; i++)
+            {
+                Table1.Rows.RemoveAt(i);
+            }
+            while (citac.Peek() > 0)
+            {
+                string pom = citac.ReadLine();
+                if (pom.Contains(DropDownList2.SelectedValue))
+                {
+                    string[] polasci = pom.Split(' ');
+                    bool prvi = true;
+                    int br = 1;
+                    foreach (string b in polasci)
+                    {
+                        if (prvi)
+                        {
+                            prvi = false;
+                            continue;
+                        }
+                        TableRow redic = new TableRow();
+                        TableCell celija1 = new TableCell();
+                        TableCell celija2 = new TableCell();
+                        celija1.Text = br.ToString();
+                        redic.Cells.Add(celija1);
+                        celija2.Text = b;
+                        redic.Cells.Add(celija2);
+                        Table1.Rows.Add(redic);
+                        br++;
+                    }
+                }
+            }
+        }
+    }
+}

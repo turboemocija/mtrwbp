@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kontakt</title>
+    <link rel="stylesheet" type="text/css" href="stil.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!--<table id="zaglavlje">
+                <tr>
+                    <td>
+                        <a href="Default.aspx">
+                            Red voznje
+                        </a>
+                    </td>
+                    <td>
+                        <a href="Kontakt.html">
+                            Kontakt
+                        </a>
+                    </td>
+                    <td>
+                        <a href="KorisnickoUputstvo.html">
+                            Korisnicko uputstvo
+                        </a>
+                    </td>
+                </tr>
+            </table>-->
+            <ul id="zaglavlje">
+                <li><a href="RedVoznje.aspx">Red Voznje</a></li>
+                <li><a class="active" href="Kontakt.html">Kontakt</a></li>
+                <li><a href="KorisnickoUputstvo.html">Korisnicko Uputstvo</a></li>
+            </ul>
+        </div>
+        <br />
+        Ime: <input type="text"/>
+        <br />
+        e-mail: <input type="text" />
+        <br />
+        Poruka: <textarea name="Text1" cols="40" rows="5"></textarea>
+        <br />
+        <input type="submit" title="Posaljite"/>
+    </form>
+</body>
+</html>

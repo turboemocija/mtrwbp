@@ -1,0 +1,60 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="RedVoznje.aspx.cs" Inherits="RedVoznjeJankovic.RedVoznje" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Red voznje</title>
+    <link rel="stylesheet" type="text/css" href="stil.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <%--<table id="zaglavlje">
+        <tr>
+            <td>
+                <a href="RedVoznje.aspx">
+                    Red voznje
+                </a>
+            </td>
+            <td>
+                <a href="Kontakt.html">
+                    Kontakt
+                </a>
+            </td>
+            <td>
+                <a href="KorisnickoUputstvo.html">
+                    Korisnicko uputstvo
+                </a>
+            </td>
+        </tr>
+    </table>--%>
+        <ul id="zaglavlje">
+            <li><a class="active" href="RedVoznje.aspx">Red Voznje</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="KorisnickoUputstvo.html">Korisnicko Uputstvo</a></li>
+        </ul>
+    </div>
+        Autobuska linija: <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" OnTextChanged="DropDownList1_SelectedIndexChanged">
+            <asp:ListItem Selected="True">Izaberite liniju</asp:ListItem>
+            <asp:ListItem Value="linija1">Linija 1</asp:ListItem>
+            <asp:ListItem Value="linija2">Linija 2</asp:ListItem>
+            <asp:ListItem Value="linija3">Linija 3</asp:ListItem>
+            <asp:ListItem Value="linija4">Linija 4</asp:ListItem>
+            <asp:ListItem Value="Linija5">Linija 5</asp:ListItem>
+            <asp:ListItem Value="linija6">Linija 6</asp:ListItem>
+            <asp:ListItem Value="linija7">Linija 7</asp:ListItem>
+            <asp:ListItem Value="linija8">Linija 8</asp:ListItem>
+        </asp:DropDownList>
+        <br />Smer: <asp:DropDownList ID="DropDownList2" runat="server" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" OnTextChanged="DropDownList2_SelectedIndexChanged"></asp:DropDownList>
+        <br />
+        <asp:Button ID="Button1" runat="server" Text="Prikazi" OnClick="Button1_Click" />
+        <asp:Table ID="Table1" runat="server">
+            <asp:TableHeaderRow>
+                <asp:TableHeaderCell>Redni broj polaska</asp:TableHeaderCell>
+                <asp:TableHeaderCell>Vreme polaska</asp:TableHeaderCell>
+            </asp:TableHeaderRow>
+        </asp:Table>
+    </form>
+</body>
+</html>
